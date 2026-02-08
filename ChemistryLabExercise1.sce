@@ -11,9 +11,8 @@ x = 0.0:0.5:6.0
 
 // Transpose x (Convert from row vector to column vector)
 x = x'
- 
-// Generate a set of numbers from 0.0 to 6.0 with step size as 0.5
-// Number of values = 13
+
+// Volume of NaOH (in mL)
 y = [0.84;0.92;1.09;1.17;1.35;1.97;10.30;11.48;11.70;11.84;11.90;11.98;12.01]
 
 disp(string(x))
@@ -34,8 +33,8 @@ ylabel('pH')
 xgrid(1,1,9)
 
 xstring(4,2,["Scale 1:1"])
-xstring(4,1,["Name: Nisha R"])
-xstring(4,0,["SRN: PES1UG25AM244"])
+xstring(4,1,["Name: Candidate A"])
+xstring(4,0,["SRN: ABCD0123456"])
 
 // Start a new Window
 scf
@@ -57,7 +56,6 @@ ylabel('$\frac{$\Delta$pH}{$\Delta$v}$')
 xgrid(1,1,9)
 
 plot(x1, dydx)
-//xstring(5, 5, '[Point x, Point y]')
 
 scf
 
